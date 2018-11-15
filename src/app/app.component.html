@@ -1,0 +1,35 @@
+<nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-light bg-dark">
+
+  <a class="navbar-brand" style="font-family: 'PT Serif', serif;size: 150px; color: #d8e7e4; font-weight: bolder" href="">
+    GITHUB SEARCH
+  </a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="nav nav-pills ">
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink='/profile'><span class="glyphicon glyphicon-user"></span>MY PROFILE</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink='/search'><span class="glyphicon glyphicon-search"></span>SEARCH</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink='/about'><span class="glyphicon glyphicon-info-sign"></span>ABOUT</a>
+      </li>
+
+    </ul>
+  </div>
+  <img src="../assets/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="">
+</nav>
+
+<div class="background">
+  <router-outlet>
+
+  </router-outlet>
+
+</div>

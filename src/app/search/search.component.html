@@ -1,0 +1,33 @@
+<div class="row search">
+	<div class="col-md-6 offset-md-3">
+
+		<form #searchForm='ngForm'>
+			<div class="form-group ">
+				<input type="text" class="form-control" placeholder="Github Username" name="username" [(ngModel)]="username"
+				 (keyup)="search()">
+			</div>
+		</form>
+
+		<div *ngIf="user">
+			<div class="col-md-3">
+				<img class="img-thumbnail github-avatar" src="{{user.avatar_url}}">
+
+				<span class="label label-default">Public Repositories: {{user.public_repos}}</span>
+				<span class="label label-default">Followers: {{user.followers}}</span>
+				<span class="label label-default">Following: {{user.following}}</span>
+				<span class="label label-default">Public Gists: {{user.public_gists}}</span>
+				<span class="label label-default">Public Repos: {{user.public_repos}}</span>
+
+			</div>
+			<div>
+				<ul class="list-group">
+					<li class="list-group-item"><strong>Username: </strong>{{user.login}}</li>
+					<li class="list-group-item"><strong>Location: </strong>{{user.location}}</li>
+					<li class="list-group-item"><strong>Email: </strong>{{user.email}}</li>
+					<li class="list-group-item"><strong>Blog: </strong>{{user.blog}}</li>
+					<li class="list-group-item"><strong>Member Since: </strong>{{user.created_at}}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

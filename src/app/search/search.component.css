@@ -1,0 +1,9 @@
+.search{
+	padding-top: 5%;
+}
+
+input{
+	border-color: rgb(39, 37, 39);
+	border-width: 15px;
+	opacity: 0.9;
+}

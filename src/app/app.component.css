@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|PT+Serif');
+
+body{
+    padding-top: 10%;
+}
+
+.bg-dark{
+    background-color: pink;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif; 
+    text-align: center;
+}
+
+li {
+    float: left;
+    font-family: 'PT Serif', serif;
+}
+
+.active {
+    background-color: pink;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(102, 94, 94);
+}
+
+.background{
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center; 
+	padding: 0;
+	margin: 0; 
+	/* height:100vh; */
+    margin-top: 5%;
+}

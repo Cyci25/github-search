@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" *ngIf="user">
+			<div class="row">
+				<div class="col-md-6">
+					<h3>{{user.name}}</h3>
+					<img class="img-thumbnail github-avatar" src="{{user.avatar_url}}">
+				</div>
+				<div class="col-md-6">
+					<div class="stats">
+						<span class="label label-default">Public Repos: {{user.public_repos}}</span>
+						<span class="label label-primary">Followers: {{user.followers}}</span>
+						<span class="label label-success">Following: {{user.following}}</span>
+						<span class="label label-info">Public Gists: {{user.public_gists}}</span>
+					</div>
+					<div>
+						<ul class="list-group">
+							<li class="list-group-item"><strong>Username: </strong>{{user.login}}</li>
+							<li class="list-group-item"><strong>Location: </strong>{{user.location}}</li>
+							<li class="list-group-item"><strong>Email: </strong>{{user.email}}</li>
+							<li class="list-group-item"><strong>Blog: </strong>{{user.blog}}</li>
+							<li class="list-group-item"><strong>Member Since: </strong>{{user.created_at}}</li>
+						</ul>
+					</div>
+
+				</div>
+				<br>
+			</div>
+
+
+
+		</div>
+	</div>
